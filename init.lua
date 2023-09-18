@@ -1,16 +1,25 @@
+-- MAIN
 require("mojeico.plugins-setup")
-require("mojeico.core.options")
+
+-- CORE
+require("mojeico.core.colorschema")
 require("mojeico.core.keymaps")
-require("mojeico.core.colorscheme")
+require("mojeico.core.options")
+
+-- LSP
+require("mojeico.plugins.lsp.mason")
+require("mojeico.plugins.lsp.lspconfig")
+require("mojeico.plugins.lsp.lspsaga")
+require("mojeico.plugins.lsp.null-ls")
+require("mojeico.plugins.treesitter")
+
+-- PLUGINS
+require("mojeico.plugins.nvim-cmp")
 require("mojeico.plugins.comment")
 require("mojeico.plugins.nvim-tree")
-require("mojeico.plugins.lualine")
 require("mojeico.plugins.telescope")
-require("mojeico.plugins.nvim-cmp")
-require("mojeico.plugins.lsp.mason")
-require("mojeico.plugins.lsp.lspsaga")
-require("mojeico.plugins.lsp.lspconfig")
-require("mojeico.plugins.lsp.null-ls")
 require("mojeico.plugins.autopairs")
-require("mojeico.plugins.treesitter")
+require("mojeico.plugins.lualine")
+
+-- GIT
 require("mojeico.plugins.gitsigns")
