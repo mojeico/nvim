@@ -24,7 +24,9 @@ return require("packer").startup(function(use)
 
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
-	use("arcticicestudio/nord-vim")
+	-- use("arcticicestudio/nord-vim")
+	use("folke/tokyonight.nvim")
+
 	use("szw/vim-maximizer") -- maximizes and restores current window
 
 	-- terminal
